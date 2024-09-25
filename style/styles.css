@@ -1,0 +1,341 @@
+/* * RULES */
+/*  Fondo: #242424
+    Letras: #f39200
+            white
+            black
+    Fuente: 'Times New Roman', Times, serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    padding: 3rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* ? HEAD */
+#header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #242424;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 100px;
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+}
+.navList > ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.navList > ul > li > a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* ? BODY */
+#main {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #242424;
+    padding: 12.5rem;
+}
+
+.mainStart {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+.start h1 {
+    color: #f39200;
+    margin-bottom: 2rem;
+}
+.start h1, h2 {
+    font-size: 3rem;
+}
+.start p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+.copytrading {
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background-color: #f39200;
+    width: max-content;
+    padding: 1rem;
+    transition: transform 1s;
+}
+.copytrading:hover {
+    box-shadow: 0px 0px 20px 5px #c07300;
+    transform: scale(1.05);
+}
+.copytrading a {
+    font-size: 3rem;
+}
+.copytrading a:hover {
+    text-decoration: none;
+}
+
+/* ? LEARN */
+#learn {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
+
+.learnBody {
+    font-size: 1.6rem;
+}
+.followers {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    background-color: #242424;
+    color: white;
+    border-radius: 2rem;
+    width: 30rem;
+    padding: 1rem;
+}
+
+/* ? PLATFORMS */
+#platforms {
+    padding: 4rem;
+}
+#platforms h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.platformsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    list-style: none;
+}
+.platformsGrid img {
+    width: 200px;
+    border-radius: 2rem;
+}
+.platformsGrid li {
+    transition: transform 1s;
+}
+.platformsGrid li:hover {
+    transform: scale(1.05);
+}
+
+/* ? STRATEGIE */
+#strategie {
+    background-color: #242424;
+    color: white;
+}
+#strategie .title {
+    color: #f39200;
+    text-decoration: none;
+}
+
+.strategieBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.strategieBody img {
+    width: 720px;
+}
+.strategieBody ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* * EN PROCESO */
+/* ? TESTIMONIOS */
+/* .userBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-align: center;
+}
+.userBox div {
+    border: solid 1px black;
+    border-radius: 2rem;
+    height: 350px;
+    width: 350px;
+    padding: 1rem;
+}
+.userBox img {
+    width: 120px;
+    border-radius: 4rem;
+}
+.userBox h2 {
+    margin-bottom: 2rem;
+    border-bottom: solid black 2px;
+}
+
+/* ? CERTIFICATES */
+/* .certificatesImages {
+    display: flex;
+    justify-content: space-around;
+}
+.certificatesImages img {
+    width: 550px;
+    height: 350px;
+} */
+
+/* ? FEEDBACK */
+#feedback {
+    text-align: center;
+}
+#feedback p {
+    font-size: 1.5rem;
+}
+.feedbackBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feedbackDiv img {
+    width: 200px;
+}
+
+/* ? FOOTER */
+#footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+#footer img {
+    width: 125px;
+}
+
+.footerFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerFlex div {
+    padding: 1rem;
+}
+.footerList {
+    list-style: none;
+    text-align: start;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+.footerList a {
+    color: white;
+}
+
+
+/* * RESPONSIVE */
+@media (min-width: 320px) and (max-width: 768px) {
+    section {
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+
+
+    /* ? HEADER */
+    #header {
+        display: block;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .navList {
+        display: none;
+    }
+
+
+    /* ? MAIN */
+    #main {
+        padding: 14rem 0rem;
+    }
+    .start h1, h2{
+        font-size: 1.7rem;
+    }
+    .copytrading a {
+        font-size: 2rem;
+    }
+
+
+    /* ? LEARN */
+    #learn {
+        display: block;
+    }
+    .followers {
+        width: auto;
+    }
+
+
+    /* ? PLATFORMS */
+    #platforms {
+        padding: 1rem;
+    }
+    .platformsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .platformsGrid li {
+        margin: 1rem;
+    }
+    .platformsGrid img {
+        width: 100px;
+    }
+
+
+    /* ? STRATEGIE */
+    .strategieBody {
+        display: grid;
+        justify-items: center;
+        padding: 1rem;
+    }
+    .strategieBody img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
+    /* ? FOOTER */
+    .footerFlex {
+        display: grid;
+    }
+}

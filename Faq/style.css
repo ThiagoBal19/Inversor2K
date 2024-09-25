@@ -1,0 +1,141 @@
+/* * RULES */
+/*  Fondo: #242424
+    Letras: #f39200
+            white
+            black
+    Fuente: 'Times New Roman', Times, serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    padding: 3rem;
+
+}
+
+a {
+    text-decoration: none!important;
+    color: black;
+}
+a:hover {
+    text-decoration: underline!important;
+}
+
+h1 {
+    font-weight: bold!important;
+    font-size: 2rem!important;
+}
+
+ul {
+    margin: 0!important;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* ? HEAD */
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2rem;
+    background-color: #242424;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 100px;
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+}
+.navList > ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.navList > ul > li > a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* ? FAQ */
+#faq {
+    display: grid;
+    padding: 5rem;
+}
+.listaPreguntas {
+    margin-top: 2rem;
+    padding-left: 5rem;
+    font-size: 1.2rem;
+}
+.listaPreguntas button {
+    font-size: 1.8rem;
+    border: none;
+    background-color: white;
+    padding: 0.4rem;
+}
+.listaPreguntas button:hover {
+    box-shadow: 0px 0px 10px 2px rgb(207, 207, 207);
+    border-radius: 1rem;
+}
+.card {
+    background-color: #f392008d!important;
+}
+
+
+/* * RESPONSIVE */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* ? HEADER */
+    #header {
+        display: block;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .navList {
+        justify-content: center;
+    }
+    .navList ul {
+        display: flex;
+        padding: 0.3rem;
+    }
+    .navList > ul > li > a {
+        font-size: 0.9rem;
+    }
+
+
+    /* ? FAQ */
+    #faq {
+        padding: 1rem;
+    }
+    .listaPreguntas{
+        padding-left: 1rem;
+    }
+    .listaPreguntas li {
+        list-style: none;
+        text-align: start;
+    }
+    .listaPreguntas button {
+        font-size: 1.5rem;
+    }
+}
