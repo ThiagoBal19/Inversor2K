@@ -133,9 +133,9 @@ ul {
     }
     .listaPreguntas li {
         list-style: none;
-        text-align: start;
     }
     .listaPreguntas button {
         font-size: 1.5rem;
+        text-align: start;
     }
 }

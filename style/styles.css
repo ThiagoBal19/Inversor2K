@@ -282,7 +282,13 @@ a:hover {
         justify-content: center;
     }
     .navList {
-        display: none;
+        justify-content: space-around;
+    }
+    .navList ul {
+        display: contents;
+    }
+    .navList > ul > li > a {
+        font-size: 0.9rem;
     }
 
 
